@@ -18,8 +18,7 @@
       <img class="logo" src="./img/logo.png" alt="Logo do Helpdesk" />
       <a class="nav-buttons" href="#recursos">Recursos</a>
       <a class="nav-buttons" href="#planos">Planos</a>
-      <a class="nav-buttons" href="">Feedbacks</a>
-      <a class="nav-buttons" href="">Contatos</a>
+      <a class="nav-buttons" href="#contato">Contatos</a>
       <a class="log-buttons" href="" id="cadastro">Cadastre-se</a>
       <a class="log-buttons" href="" id="login">Login →]</a>
     </header>
@@ -188,18 +187,31 @@
       </section>
     <footer>
       <form action="">
-        <h2>Alguma dúvida? Contate-nos</h2>
+        <h2 id="contato">Alguma dúvida? Contate-nos</h2>
         <input type="text" id="name" name="name" placeholder="Nome" required> 
         <input type="text" name="email" id="email" placeholder="E-mail" required>
         <input type="tel" name="cel-number" id="cel-number" placeholder="🇧🇷 | (99) 99999-9999"> 
         <textarea name="duvida" id="duvida" cols="25" rows="5" style="resize: none;" placeholder="Dúvida"></textarea>
         <button class="form-submit">Enviar</button>
       </form>
-      <ul class="redes-sociais">
-        <li><a href="instagram.com/wellarbrn"><img src="./img/icons8-instagram-50 (1).png" alt=""></a></li>
-        <li><a href="github.com/wellarzin"><img src="./img/icons8-github-50 (1).png" alt=""></a></li>
-        <li><a href="https://www.linkedin.com/in/bruno-wellar-31a617269/"><img src="./img/icons8-linkedin-50.png" alt=""></a></li>
-      </ul>
+      <div class="content-footer">
+        <div class="socials">
+          <ul class="redes-sociais">
+            <li><a href="https://www.instagram.com/wellarbrn/" target="_blank"><img src="./img/icons8-instagram-50 (1).png" alt=""></a></li>
+            <li><a href="https://github.com/wellarzin" target="_blank"><img src="./img/icons8-github-50 (1).png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/bruno-wellar-31a617269/" target="_blank"><img src="./img/icons8-linkedin-50.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <a class="f-links" href="#recursos">Recursos</a>
+          <a class="f-links" href="#planos">Planos</a>
+          <a class="f-links" href="#contato">Contato</a>
+        </div>
+        <div class="f-text">
+          <h3 class="f-object">A TechAid é um software com o objetivo de ajudar empresas de manutenção e assistência técnica a serem mais produtivas.</h3>
+          <p class="f-object">Feito com carinho por <span>Bruno Wellar</span>.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
