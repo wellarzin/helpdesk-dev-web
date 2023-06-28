@@ -20,7 +20,7 @@ body{
 header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 25px;
 }
 
@@ -35,7 +35,8 @@ header {
   text-decoration: none;
   font-size: 15px;
   transition: 0.1s ease-in-out;
-}
+  margin: 15px;
+  }
 
 .nav-buttons:hover {
   border-bottom: 3px solid #6e3586;
@@ -160,11 +161,7 @@ figcaption {
   padding: 1rem 0;
   height: auto;
 }
-.tabela-planos {
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-}
+
 .planos-texto {
   text-align: center;
   margin: 3rem 0;
@@ -177,29 +174,82 @@ figcaption {
   font-size: 1.5rem;
   color: #2f2533;
 }
-table,
-th,
-td {
-  padding: 1rem;
-  background-color: white;
-  text-align: center;
-  border-collapse: collapse;
-  border-radius: 3rem;
-}
-td {
-  width: 100px;
-  border: 1px solid #8487f6;
-}
-tr td:first-child {
-  text-align: left;
-}
-th {
-  font-size: 1.5rem;
-}
-table {
-  width: 90%;
+
+.div-planos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
 }
 
+.plano{
+  background-color: rgb(238, 228, 228);
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  height: 650px;
+}
+.icone-plano{
+  width: 50px;
+  height: auto;
+}
+
+.plano h2{
+  margin: 10px;
+}
+
+.plano h3{
+  margin: 10px;
+}
+
+.plano ul{
+  list-style-type: none;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.plano li{
+  font-size: 12px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.check{
+  width: 20px;
+  height: auto;
+}
+
+#button-basics{
+  margin-top: 245px;
+}
+
+#button-premium{
+  margin-top: 50px;
+}
+
+#button-enter{
+  margin-top: 213px;
+}
+
+.b-planos{
+  background-color: #9455be;
+  border: none;
+  padding: 15px;
+  border-radius: 30px;
+  width: 120px;
+  transition: 0.2s ease-in-out; 
+}
+
+.b-planos:hover{
+  transform: scale(1.06);
+}
+
+.b-planos a{
+    color: rgb(238, 228, 228);
+  }
 /* Área do Rodapé ou Footer */
 
 footer{
@@ -287,10 +337,17 @@ textarea::placeholder{
   text-decoration: none;
   list-style: none;
   display: flex;
-
 }
 
-li{
+.redes-sociais img{
+  transition: 0.2s ease-in-out;
+}
+
+.redes-sociais img:hover{
+  transform: scale(1.1);
+}
+
+.redes-sociais li{
   padding: 10px;
 }
 

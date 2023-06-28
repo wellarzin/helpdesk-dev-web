@@ -15,7 +15,9 @@
   <body>
     <!-- Sessão de cabeçalho -->
     <header>
-      <img class="logo" src="./img/logo.png" alt="Logo do Helpdesk" />
+      <div class="div-logo">
+        <img class="logo" src="./img/logo.png" alt="Logo do Helpdesk" />
+      </div>
       <a class="nav-buttons" href="#recursos">Recursos</a>
       <a class="nav-buttons" href="#planos">Planos</a>
       <a class="nav-buttons" href="#contato">Contatos</a>
@@ -66,125 +68,58 @@
             <h1>Preços e Planos</h1>
             <p>Escolha o plano que melhor se encaixa na sua empresa</p>
         </div>
-        <div class="tabela-planos">    
-          <table>
-            <tr>
-              <th></th>
-              <th><h1>Free</h1>R$ 0</th>
-              <th><h1>Premium</h1>R$ 25/mês</th>
-              <th><h1>Enterprise</h1>R$ 39/mês</th>
-            </tr>
-            <tr>
-              <td>Atendentes</td>
-              <td>1</td>
-              <td>5</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td>Usuários</td>
-              <td>5</td>
-              <td>100</td>
-              <td>500</td>
-            </tr>
-            <tr>
-              <td>Departamentos</td>
-              <td>1</td>
-              <td>30</td>
-              <td>200</td>
-            </tr>
-            <tr>
-              <td>Chamados</td>
-              <td>100/mês</td>
-              <td>Ilimitados</td>
-              <td>Ilimitados</td>
-            </tr>
-            <tr>
-              <td>Exportação dos dados</td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Controle de solicitações e incidentes</td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Abertura de solicitações por email</td>
-              <td></td>
-              <td></td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Alertas (Email, Pushover, Telegram, etc)</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>API</td>
-              <td></td>
-              <td></td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Base de conhecimento</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Campos Personalizados</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Controle de horas trabalhadas</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Controle de SLA</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Dashboard</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Integração com Active Directory, Open LDAP, Pop e Imap</td>
-              <td></td>
-              <td></td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Multi-Idioma</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>Avaliação do Atendimento</td>
-              <td></td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-              <tr>
-                <td>Relatórios</td>
-                <td></td>
-                <td>X</td>
-                <td>X</td>
-              </tr>
-          </table>
+        <div class="div-planos">
+          <div class="plano">
+            <h2>Básico</h2>
+            <img class="icone-plano" src="./img/icons8-livre-60.png" alt="">
+            <h3>Free</h3>
+            <ul>
+              <li>1 atendente sempre ali para você.</li>
+              <li>Você pode ter até 5 usuários.</li>
+              <li>1 departamento.</li>
+              <li>Até 100 chamados por mês.</li>
+              <li>Exportação de dados. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Controle de solicitações e incidentes. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <button class="b-planos" id="button-basics"><a href="">Ver Mais</a></button>
+            </ul>
+          </div>
+          <div class="plano">
+            <h2>Premium</h2>
+            <img class="icone-plano" src="./img/icons8-coroa-64.png" alt="">
+            <h3>R$ <span>24,99</span>/mês</h3>
+            <p>Tudo que contém no <strong>Básico</strong>, além de:</p>
+            <ul>
+              <li>5 Atendentes ali para você.</li>
+              <li>Até 100 usuários.</li>
+              <li>Chamados ilimitados </li>
+              <li>Alertas (Email, Pushover, Telegram, etc) <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Base de conhecimento sofisticada. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Campos Personalizados. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Controle de horas trabalhadas. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Controle de Service Level Agreement. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Dashboard. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Comunicação Multi-Idioma. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Avaliação do Atendimento. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Relatórios dos atendimentos. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <button class="b-planos" id="button-premium"><a href="">Ver Mais</a></button>
+            </ul>
+          </div>
+          <div class="plano">
+            <h2>Enterprise</h2>
+            <img class="icone-plano" src="./img/icons8-companhia-50.png" alt="">
+            <h3>R$ <span>38,99</span>/mês</h3>
+            <p>Tudo que contém no <strong>Premium</strong>, alem de:</p>
+            <ul>
+              <li>100 atendentes sempre ali para você.</li>
+              <li>Você pode ter até 500 usuários.</li>
+              <li>200 departamentos.</li>
+              <li>Uma API incrivel. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <li>Integração com Active Directory, Open LDAP, Pop e Imap. <img class="check" src="./img/icons8-verificar-todos-os-24.png" alt=""></li>
+              <button class="b-planos" id="button-enter"><a href="">Ver Mais</a></button>
+            </ul>
+          </div>
         </div>
-      </section>
+    </section>
     <footer>
       <form action="">
         <h2 id="contato">Alguma dúvida? Contate-nos</h2>
